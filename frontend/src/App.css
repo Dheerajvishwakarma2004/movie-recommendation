@@ -1,0 +1,63 @@
+/* src/App.css */
+.app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  align-self: center;
+}
+
+li {
+  display: flex; /* Use Flexbox */
+  flex-direction: column; /* Align items vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  padding: 20px; /* Increased padding for better appearance */
+  border: 1px solid #ccc;
+  background-color: #007bff;
+  width: 300px;
+  margin: 5px ;
+  margin-left:129px;
+  color: white; /* Set text color for visibility */
+  border-radius: 4px; /* Optional: Add rounded corners */
+}
+
+li:hover {
+  background-color: #0056b3;
+}
+
+
