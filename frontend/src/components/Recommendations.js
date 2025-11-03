@@ -162,18 +162,22 @@ useEffect(() => {
                     <Grid container spacing={3}>
                         {movies.map((movie) => (
                             <Grid item key={movie._id} xs={12} sm={6} md={4} lg={3}>
-                                <Card 
-                                    elevation={3} 
-                                    sx={{ 
+                                <Card
+                                    elevation={0}
+                                    sx={{
                                         height: '100%',
                                         display: 'flex',
                                         flexDirection: 'column',
                                         borderRadius: 2,
                                         overflow: 'hidden',
                                         cursor: 'pointer',
+                                        background: 'linear-gradient(135deg, #1a1f3a 0%, #232d4d 100%)',
+                                        border: '1px solid rgba(100, 181, 246, 0.2)',
+                                        transition: 'all 0.3s ease-in-out',
                                         '&:hover': {
-                                            transform: 'translateY(-4px)',
-                                            transition: 'transform 0.3s ease'
+                                            transform: 'translateY(-6px)',
+                                            borderColor: 'rgba(100, 181, 246, 0.5)',
+                                            boxShadow: '0 12px 32px rgba(25, 118, 210, 0.3)',
                                         }
                                     }}
                                     onClick={() => handleOpenPopup(movie)}
@@ -183,7 +187,7 @@ useEffect(() => {
                                         height="300"
                                         image={movie.imageUrl}
                                         alt={movie.title}
-                                        sx={{ 
+                                        sx={{
                                             objectFit: 'cover',
                                             width: '100%',
                                             backgroundColor: '#f5f5f5'
@@ -196,8 +200,8 @@ useEffect(() => {
                                             display: 'flex',
                                             flexDirection: 'column',
                                             justifyContent: 'space-between',
-                                            background: 'linear-gradient(to bottom, #f5f5f5, #e0e0e0)',
-                                            borderTop: '1px solid rgba(0,0,0,0.1)'
+                                            background: 'linear-gradient(135deg, #1a1f3a 0%, #232d4d 100%)',
+                                            borderTop: '1px solid rgba(100, 181, 246, 0.2)'
                                         }}
                                     >
                                         {/* Movie Title and Ratings */}
